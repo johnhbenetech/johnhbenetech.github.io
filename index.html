@@ -1,8 +1,9 @@
-<!DOCTYPE html>
+<!DOCTYPE html
+Cache-Control: no-cache>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>Vellum Test</title>
+    <title>Create Form</title>
     
     <link href="tests/lib/font-awesome.css" type="text/css" rel="stylesheet" />
     <link href="tests/lib/font-commcare.css" type="text/css" rel="stylesheet" />
@@ -17,30 +18,18 @@
     <script src="bower_components/xrayquire/xrayquire.js"></script>
 
     <style>
-      .sidebar button,
-      .sidebar div {
-        width: 100%;
-        margin-top: 1em;
-      }
-      .nav-list {
+       .nav-list {
         padding-left: 0;
       }
     </style>
   </head>
 
   <body>
-    .
+	<input type="file" id="file" style="display: none"/>
     <div class="container-fluid">
       <div class="row-fluid">
-        <div class="span10">
-          <div class="tab-content">
-            <div class="tab-pane active" id="test">
-              <div id='vellum'></div>
-            </div>
-            <div class="tab-pane" id="results">
-              <div id="mocha"></div>
-            </div>
-          </div>
+         <div class="tab-content">
+            <div class="tab-pane active" id='vellum'></div>
         </div>
       </div>
     </div>
