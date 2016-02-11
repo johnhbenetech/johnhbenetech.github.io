@@ -223,7 +223,8 @@ define([
         var pos = 0;
         if (ctrl.createTextRange) {
             ctrl.focus ();
-            var sel = window.getSelection.createRange();
+            var sel2 = document.getSelection();
+            var sel = sel2.createRange();
             sel.moveStart ('character', -ctrl.value.length);
             pos = sel.text.length;
         } else if (typeof ctrl.selectionStart !== 'undefined') {
