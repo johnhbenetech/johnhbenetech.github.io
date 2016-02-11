@@ -223,7 +223,7 @@ define([
         var pos = 0;
         if (ctrl.createTextRange) {
             ctrl.focus ();
-            var sel = window.getSelection().getRangeAt(0);
+            var sel = window.getSelection();
             sel.moveStart ('character', -ctrl.value.length);
             pos = sel.text.length;
             
